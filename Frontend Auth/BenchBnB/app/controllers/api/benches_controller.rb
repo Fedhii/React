@@ -1,13 +1,19 @@
-class API::BenchesController < ApplicationController
+class Api::BenchesController < ApplicationController
+  before_action :require_logged_in, only: [:create]
 
     def index
-      @benches = bounds ? Bench.in_bounds(params(:bounds)) : Bench.all
+      benches = bounds ? Bench.in_bounds(bounds) : Bench.all
       
       if params[:minSeating] && params[:maxSeating]
         benches = benches.where(seating: seating_range)
       end
 
+      @benches = benches.includes(:reviews, :favorite_users)
       render :index
+    end
+
+    def show
+      @bench = Bench.find(params[:id])
     end
 
     def create
@@ -23,14 +29,16 @@ class API::BenchesController < ApplicationController
     
     def bench_params
         params.require(:bench).permit(
-            :description,
             :lat,
             :lng,
+            :description,
             :seating,
-            :photo, 
-            :max_seating, 
-            :min_seating
+            :photo
         )
+    end
+
+    def bounds
+      params[:bounds]
     end
 
 end

@@ -6,7 +6,7 @@ const defaultFilters = Object.freeze({
     maxSeating: 10
 });
 
-const filterReducer = (state = defaultFilters, action) => {
+const filtersReducer = (state = defaultFilters, action) => {
     Object.freeze(state);
       if (action.type === UPDATE_FILTER) {
         const newFilter = {
@@ -14,9 +14,8 @@ const filterReducer = (state = defaultFilters, action) => {
         };
         return Object.assign({}, state, newFilter);
       } else {
-        return state
+        return state;
       }
+};
 
-}
-
-export default filterReducer
+export default filtersReducer;

@@ -241,3 +241,385 @@ FOREIGN KEY ("blob_id")
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-07-30 11:10:51 -0500
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fedhiigobena/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (297.0ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - undefined method `logged_in?' for #<#<Class:0x00007fe84bc98f48>:0x00007fe84bc89570>
+Did you mean?  logger?:
+  app/views/static_pages/root.html.erb:1:in `view template'
+
+Started POST "/__better_errors/64d13d8a28d602d0/variables" for ::1 at 2020-07-30 11:10:54 -0500
+Started GET "/" for ::1 at 2020-07-30 11:12:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (275.4ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - undefined method `logged_in?' for #<#<Class:0x00007fe84bc98f48>:0x00007fe84bbd16a0>
+Did you mean?  logger?:
+  app/views/static_pages/root.html.erb:1:in `view template'
+
+Started POST "/__better_errors/a8636d99e7add0a1/variables" for ::1 at 2020-07-30 11:12:37 -0500
+Started GET "/" for ::1 at 2020-07-30 11:14:26 -0500
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/application_controller.rb:32:in `'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/adb2dbde952535e4/variables" for ::1 at 2020-07-30 11:14:27 -0500
+Started GET "/" for ::1 at 2020-07-30 11:14:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1338ms (Views: 1333.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:19:31 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 167ms (Views: 149.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:21:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 255ms (Views: 240.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:38:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 608ms (Views: 598.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:42:34 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 793ms (Views: 768.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:44:47 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:48:21 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 133ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:52:06 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 166ms (Views: 161.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:55:32 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fedhiigobena/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/8d0d039890689f7a/variables" for ::1 at 2020-07-30 11:55:33 -0500
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1532413478262727620)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFavorites (20200730165308)
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (66.9ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "user_id" integer NOT NULL, "bench_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200730165308_create_favorites.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_user_id" ON "favorites"  ("user_id")[0m
+  ↳ db/migrate/20200730165308_create_favorites.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_bench_id" ON "favorites"  ("bench_id")[0m
+  ↳ db/migrate/20200730165308_create_favorites.rb:11
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_favorites_on_bench_id_and_user_id" ON "favorites"  ("bench_id", "user_id")[0m
+  ↳ db/migrate/20200730165308_create_favorites.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (4.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200730165308"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1532413478262727620)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-07-30 12:03:02 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fedhiigobena/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:12:11 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - The asset "favicon.png" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:10:in `view template'
+
+Started POST "/__better_errors/32259c0a80e3980f/variables" for ::1 at 2020-07-30 12:12:13 -0500
+Started GET "/" for ::1 at 2020-07-30 12:13:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 109ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:19:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 346ms (Views: 340.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:24:05 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 470ms (Views: 456.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:26:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 485ms (Views: 478.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:28:00 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 159ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:33:01 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 633ms (Views: 619.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:39:38 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 760ms (Views: 743.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:41:07 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 430ms (Views: 421.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:43:49 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 468ms (Views: 449.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:44:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 374ms (Views: 369.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:45:49 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 508ms (Views: 492.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:47:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 477ms (Views: 446.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:49:26 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 306ms (Views: 300.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:49:28 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (10.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (35.5ms)
+Completed 200 OK in 259ms (Views: 58.8ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:49:41 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 122ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:49:43 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.4ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (2.0ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:49:44 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 359ms (Views: 353.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:49:45 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.5ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (3.3ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:49:57 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 330ms (Views: 323.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:50:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:50:14 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (2.0ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:50:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 319ms (Views: 309.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:50:55 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.7ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (6.9ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:51:42 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 339ms (Views: 334.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.77397200000002&bounds%5BnorthEast%5D%5Blng%5D=-122.36040085131836&bounds%5BsouthWest%5D%5Blat%5D=37.77397200000002&bounds%5BsouthWest%5D%5Blng%5D=-122.50219314868164&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:51:44 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.77397200000002", "lng"=>"-122.36040085131836"}, "southWest"=>{"lat"=>"37.77397200000002", "lng"=>"-122.50219314868164"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.77397200000002') AND (lat > '37.77397200000002') AND (lng > '-122.50219314868164') AND (lng < '-122.36040085131836') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (2.1ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:52:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593713507&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165576172&bounds%5BsouthWest%5D%5Blat%5D=37.74004249934129&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234423828&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:52:17 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593713507", "lng"=>"-122.38838165576172"}, "southWest"=>{"lat"=>"37.74004249934129", "lng"=>"-122.47421234423828"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (6.4ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593713507') AND (lat > '37.74004249934129') AND (lng > '-122.47421234423828') AND (lng < '-122.38838165576172') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (8.7ms)
+Completed 200 OK in 36ms (Views: 27.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.89709232955664&bounds%5BnorthEast%5D%5Blng%5D=-122.3023928734189&bounds%5BsouthWest%5D%5Blat%5D=37.62567292819016&bounds%5BsouthWest%5D%5Blng%5D=-122.64571562732515&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 12:52:25 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.89709232955664", "lng"=>"-122.3023928734189"}, "southWest"=>{"lat"=>"37.62567292819016", "lng"=>"-122.64571562732515"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (2.2ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.89709232955664') AND (lat > '37.62567292819016') AND (lng > '-122.64571562732515') AND (lng < '-122.3023928734189') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (3.6ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593713507&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165576172&bounds%5BsouthWest%5D%5Blat%5D=37.74004249934129&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234423828&minSeating=1&maxSeating=10" for ::1 at 2020-07-30 13:12:16 -0500
+Processing by Api::BenchesController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593713507", "lng"=>"-122.38838165576172"}, "southWest"=>{"lat"=>"37.74004249934129", "lng"=>"-122.47421234423828"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (12.0ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593713507') AND (lat > '37.74004249934129') AND (lng > '-122.47421234423828') AND (lng < '-122.38838165576172') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (41.8ms)
+Completed 200 OK in 120ms (Views: 52.0ms | ActiveRecord: 12.0ms)
+
+

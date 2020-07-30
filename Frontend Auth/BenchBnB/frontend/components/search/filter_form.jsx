@@ -14,7 +14,7 @@ const FilterForm = ({ minSeating, maxSeating, updateFilter }) => (
       value={minSeating}
       onChange={handleChange('minSeating', updateFilter)}
     />
-    <br />
+    <br/>
     <label>Maximum Seats</label>
     <input
       type="number"
@@ -22,6 +22,6 @@ const FilterForm = ({ minSeating, maxSeating, updateFilter }) => (
       onChange={handleChange('maxSeating', updateFilter)}
     />
   </div>
-)
+);
 
 export default FilterForm;

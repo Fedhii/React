@@ -1,34 +1,32 @@
-export const fetchBenches = (data, filters) => (
-    $.ajax({
-        method: "GET",
-        url: "/api/benches",
-        data,
-        filters,
-        error: console.log(err)
-    })
-);
-
-export const createBench = benchForm => (
-    $.ajax({
-        method: 'POST',
-        url: '/api/benches',
-        data: benchForm,
-        contentType: false,
-        processData: false
-    })
-);
-
-export const fetchBench = benchId => (
+export const fetchBenches = data => (
     $.ajax({
         method: 'GET',
-        url: `/api/benches/${benchId}`
+        url: 'api/benches',
+        data
+    })
+);
+
+export const fetchBench = id => (
+    $.ajax({
+        method: 'GET',
+        url: `api/benches/${id}`
     })
 );
 
 export const createReview = review => (
     $.ajax({
         method: 'POST',
-        url: '/api/reviews',
+        url: 'api/reviews',
         data: { review }
+    })
+);
+
+export const createBench = benchForm => (
+    $.ajax({
+        method: 'POST',
+        url: 'api/benches',
+        data: benchForm,
+        contentType: false,
+        processData: false
     })
 );

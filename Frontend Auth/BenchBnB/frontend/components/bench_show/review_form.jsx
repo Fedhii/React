@@ -3,12 +3,13 @@ import { withRouter } from 'react-router-dom';
 
 class ReviewForm extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       rating: 5,
-      body: ""
-    }
+      body: ''
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.navigateToBenchShow = this.navigateToBenchShow.bind(this);
     }
 
     navigateToBenchShow() {
@@ -19,15 +20,15 @@ class ReviewForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const benchId = parseInt(this.props.match.params.benchId);
-        const review = Object.assign({}, state, {
+        const review = Object.assign({}, this.state, {
             bench_id: benchId
-        })
+        });
         this.props.createReview(review);
         this.navigateToBenchShow();
     }
 
     update(property) {
-        return e => this.setState({ [property]: e.currentTarget.value })
+        return e => this.setState({ [property]: e.currentTarget.value });
     }
 
     render() {
@@ -35,16 +36,16 @@ class ReviewForm extends React.Component {
             <div className="review-form">
                 <form onSubmit={this.handleSubmit}>
                     <label>Rating</label>
-                    <br />
+                    <br/>
                     <input
                         type="number"
                         value={this.state.rating}
                         onChange={this.update("rating")}
                     />
-                    <br />
+                    <br/>
 
                     <label>Comment</label>
-                    <br />
+                    <br/>
 
                     <textarea
                         cols="30"
@@ -52,7 +53,7 @@ class ReviewForm extends React.Component {
                         value={this.state.body}
                         onChange={this.update("body")}
                     />
-                    <br />
+                    <br/>
                     <input type="submit" />
                 </form>
                 <button onClick={this.navigateToBenchShow}>Cancel</button>
@@ -60,3 +61,5 @@ class ReviewForm extends React.Component {
         );
     }
 }
+
+export default withRouter(ReviewForm);

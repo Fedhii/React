@@ -1,45 +1,48 @@
-import * as BenchAPIUtil from './../util/bench_api_util';
-import { RECEIVE_BENCH } from '../../../solution/frontend/actions/bench_actions';
+import * as APIUtil from '../util/bench_api_util';
 
-export const RECEIVE_BENCHES = "RECEIVE_BENCHES";
-export const CREATE_BENCH = "CREATE_BENCH";
-export const RECEIVE_BENCH = "RECEIVE_BENCH";
-export const FETCH_BENCH = "FETCH_BENCH";
-export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
+export const RECEIVE_BENCHES = 'RECEIVE_BENCHES';
+export const RECEIVE_BENCH = 'RECEIVE_BENCH';
+export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 
 export const receiveBenches = benches => ({
     type: RECEIVE_BENCHES,
-    benches
+    benches,
 });
 
-export const receiveBench = bench => ({
+export const receiveBench = ({ bench, reviews, authors }) => ({
     type: RECEIVE_BENCH,
-    bench
-})
+    bench,
+    reviews,
+    authors,
+});
 
 export const receiveReview = ({ review, average_rating, author }) => ({
     type: RECEIVE_REVIEW,
     review,
     average_rating,
-    author
+    author,
 });
 
-export const fetchBenches = dispatch => (
-    BenchAPIUtil.fetchBenches()
-        .then(benches => (dispatch(receiveBenches(benches))))
+export const createReview = review => dispatch => (
+    APIUtil.createReview(review).then(review => (
+        dispatch(receiveReview(review))
+    ))
+);
+
+export const fetchBenches = filters => dispatch => (
+    APIUtil.fetchBenches(filters).then(benches => (
+        dispatch(receiveBenches(benches))
+        ))
+);
+
+export const fetchBench = id => dispatch => (
+    APIUtil.fetchBench(id).then(payload => (
+        dispatch(receiveBench(payload))
+    ))
 );
 
 export const createBench = bench => dispatch => (
-    BenchAPIUtil.createBench(bench)
-      .then(bench => (dispatch(receiveBench(bench))))
-);
-
-export const fetchBench = benchId => dispatch => (
-    BenchAPIUtil.fetchBench(benchId)
-      .then(bench => (dispatch(receiveBench(bench))))
-);
-
-export const createReview = review => dispatch => (
-    BenchAPIUtil.createReview(review)
-      .then(review => dispatch(receiveReview(review)))
+    APIUtil.createBench(bench).then(bench => (
+        dispatch(receiveBench(bench))
+    ))
 );

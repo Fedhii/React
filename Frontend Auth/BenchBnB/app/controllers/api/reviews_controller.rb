@@ -1,4 +1,5 @@
 class Api::ReviewsController < ApplicationController
+  before_action :require_logged_in
 
   def create
     @review = current_user.reviews.new(review_params)
@@ -10,11 +11,9 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-
   private
 
   def review_params
-    params.require(:review).permit(:body, :rating, :bench_id)
+    params.require(:review).permit(:rating, :body, :bench_id)
   end
-
 end
